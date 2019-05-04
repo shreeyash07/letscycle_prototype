@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KYCform"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KYC FORM"
+        style="@style/titlestyle">
+
+    </TextView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="PERSONAL INFORMATION "
+                android:textColor="@color/color1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/fathername"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Father's Name"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/mothername"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mother's Name"
+                android:inputType="text"
+                android:maxLines="1"
+
+                />
+
+            <EditText
+                android:id="@+id/cpassw"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Grand Father's Name"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/newpassw"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Spouse's Name(Optional)"
+                android:inputType="text"
+                android:maxLength="16"
+                android:maxLines="1" />
+
+
+            <EditText
+                android:id="@+id/dob"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of birth"
+                android:inputType="date"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/occupation"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dob"
+                android:hint="Occupation"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/gen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="20dp"
+                android:text="Gender"
+                android:textColor="@color/color3"
+                android:textSize="15dp" />
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gen"
+                android:layout_alignRight="@+id/gen"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/email"
+                    android:checked="true"
+                    android:padding="10dp"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Female"
+
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="PERMANENT ADDRESS "
+                android:textColor="@color/color1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/district"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="District"
+                android:inputType="text"
+                android:maxLines="1"
+
+                />
+
+            <EditText
+                android:id="@+id/vdc"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/phno"
+                android:hint="VDC/Muncipality"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/ward"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/phno"
+                android:hint="Ward Number"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="DOCUMENTS"
+                android:textColor="@color/color1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/idtype"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/phno"
+                android:hint="Identify Type"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/idno"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/phno"
+                android:hint="Identification Number"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/issuedfrom"
+                style="@style/borderselector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/phno"
+                android:hint="Issued Date"
+                android:inputType="date"
+                android:maxLines="1" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/done"
+                    style="@style/btnselector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Register" />
+
+                <Button
+                    android:id="@+id/cancle"
+                    style="@style/btnselector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancle" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            >
+
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:layout_marginTop="5dp"
+             >
+
+             <LinearLayout
+                 android:id="@+id/stations"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="120dp"
+                 android:background="@color/color7"
+                 android:layout_margin="10dp"
+                 android:gravity="center"
+                 android:orientation="vertical"
+
+                 >
+
+                 <ImageView
+                     android:layout_width="80dp"
+                     android:layout_height="80dp"
+                     android:src="@drawable/ic_directions_bike_black_24dp"
+                     />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Stations"
+                     android:textStyle="bold"
+                     android:textColor="#fff"
+                     android:textSize="22sp"
+
+                     />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/balance"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="120dp"
+                 android:background="@color/color6"
+                 android:layout_margin="10dp"
+                 android:gravity="center"
+                 android:orientation="vertical"
+                 >
+
+                 <ImageView
+                     android:layout_width="80dp"
+                     android:layout_height="80dp"
+                     android:src="@drawable/ic_account_balance_wallet_black_24dp"
+                     />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Balance"
+                     android:textStyle="bold"
+                     android:textColor="#fff"
+                     android:textSize="22sp"
+
+                     />
+
+             </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/btn_scan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:background="@color/color2"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_qr_code"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan to Unlock"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stopwatch"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:background="@color/color5"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_steps"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Num code"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:id="@+id/result_text"
+            android:padding="10dp"
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
